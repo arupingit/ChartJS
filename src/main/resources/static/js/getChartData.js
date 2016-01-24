@@ -106,7 +106,6 @@ $("#line").click(function () {
 	 	 	 if(charts[index] !== undefined || charts[index] !== null){
 	 	 	 	charts[index].destroy();
 	 	 	 }	 	 	
-			value.ctx.clearRect(0, 0, value.ctx.canvas.width, value.ctx.canvas.height);
 	 	 	charts[index] =  new Chart(value.ctx).Line(value.data,options);
 	 	 });	 
 });
@@ -118,7 +117,6 @@ $("#bar").click(function () {
 	 	 	if(charts[index] !== undefined || charts[index] !== null){
 	 	 	 	charts[index].destroy();
 	 	 	 }
-			value.ctx.clearRect(0, 0, value.ctx.canvas.width, value.ctx.canvas.height);
 	 	 	charts[index] =  new Chart(value.ctx).Bar(value.data,options);
 	 	 });	 
 });
