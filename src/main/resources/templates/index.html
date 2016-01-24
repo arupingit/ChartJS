@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+	<title></title>
+	<link rel="stylesheet" href="/css/bootstrap.min.css"></link>
+	<link rel="stylesheet" href="/css/userCSS.css"></link>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Charts Demo</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#" id="line">Line Chart</a></li>
+            <li><a href="#" id="bar">Bar Chart</a></li>
+            <li><a href="#" id="refreshCharts">Refresh</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+	<div class="jumbotron">
+      <div class="container">
+        <!-- Added to prevent navbar from overlapping the charts -->
+      </div>
+    </div>
+ 
+	<div id="parentDiv">		
+	</div>
+	
+	<script type="text/javascript" src="/js/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/js/Chart.min.js"></script>
+	<script type="text/javascript" src="/js/getChartData.js"></script>
+	<script type="text/javascript">
+	userScript.getChartData();
+	</script>
+</body>
+</html>
