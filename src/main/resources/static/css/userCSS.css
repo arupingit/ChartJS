@@ -1,3 +1,10 @@
 h1 {
-	color: red
+	color : red;
+}
+
+.appName{
+	color : #a200ff;
+	font-weight : bold;
+	text-align:center;
+	font-family: "Times New Roman", Georgia, Serif;
 }

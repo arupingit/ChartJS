@@ -13,7 +13,7 @@ public class ChartsService {
 
 	public ChartsResponse getDummyData1(){
 		ChartsResponse chartsResponse = new ChartsResponse();
-		chartsResponse.setAppName("");
+		chartsResponse.setAppName("Test app 1");
 		
 		List<String> lables = new ArrayList<>();
 		lables.add("January");
@@ -59,7 +59,7 @@ public class ChartsService {
 
 	public ChartsResponse getDummyData2(){
 		ChartsResponse chartsResponse = new ChartsResponse();
-		chartsResponse.setAppName("");
+		chartsResponse.setAppName("Test app 2");
 		
 		List<String> lables = new ArrayList<>();
 		lables.add("January");

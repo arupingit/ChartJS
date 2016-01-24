@@ -47,6 +47,8 @@ var prepareChartContext = function (canvasNode,chartdata) {
 var createCanvasNode = function () {
 	 /* body... */ 
 	 var $div = $("<div>", {class: "col-md-4"});
+	 var $span = $("<span>", {class: "appName"});
+	 $($div).append($span);
 	 var $canvas = $("<canvas>",{class: "chartClass"});
 	 return {
 	 	canvasNodeHandler : $($div).append($canvas),
@@ -78,11 +80,13 @@ var getChartData = function () {
 	 			containerNode = createContainerNode();
 	 			canvasNode = createCanvasNode();
 	 			chartData[i] = prepareChartContext(canvasNode.canvasHandler,data[i]);
+	 			$($(canvasNode.canvasNodeHandler).find('span')).append(document.createTextNode(data[i].appName));
 	 			$(containerNode).append(canvasNode.canvasNodeHandler);
 	 			$(parentDiv).append(containerNode);
 	 		} else{
 	 			canvasNode = createCanvasNode();
-	 			chartData[i] = prepareChartContext(canvasNode.canvasHandler,data[i]);	 	 
+	 			chartData[i] = prepareChartContext(canvasNode.canvasHandler,data[i]);
+	 			$($(canvasNode.canvasNodeHandler).find('span')).append(document.createTextNode(data[i].appName));	 	 
 	 			$(containerNode).append(canvasNode.canvasNodeHandler);
 	 		};
 	 	 }
