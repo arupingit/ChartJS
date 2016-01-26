@@ -125,10 +125,7 @@ $("#bar").click(function () {
 	 	 });	 
 });
 
-$("#refreshCharts").click(function () {
-	 /* body... */
-	getChartData();
-});
+$("#refreshCharts").click(getChartData);
 
 return {
 	getChartData : getChartData
